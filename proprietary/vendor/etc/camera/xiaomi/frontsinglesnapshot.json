@@ -1,0 +1,77 @@
+{
+  "PipelineName": "FrontSingleSnapshot",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.morphohdr",
+        "NodeInstance":"HDRInstance"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.mfnr",
+        "NodeInstance":"MFNRInstance"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.skinbeautifier",
+        "NodeInstance": "Skinnstance"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.swflip",
+        "NodeInstance":"SwflipInstance"
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+    {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "HDRInstance"
+        }
+      },
+       {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "HDRInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance":"MFNRInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "MFNRInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance":"Skinnstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "Skinnstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance":"SwflipInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SwflipInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance":"SinkBuffer"
+        }
+      }
+    ]
+  }
+}

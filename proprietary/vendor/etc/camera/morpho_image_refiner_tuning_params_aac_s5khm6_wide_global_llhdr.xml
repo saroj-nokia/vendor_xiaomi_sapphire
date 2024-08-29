@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Morpho Image Refiner Parameters Configuration -->
+<!-- Copyright(c) 2021 Morpho China,Inc.  -->
+
+
+<image_refiner>
+	<version   type="string" length="1">v1.0.2_xiaomi_N7_llhdr_main_20231102</version>
+	<camera_id type="int"    length="1">1</camera_id>
+	
+    <params>
+		<iso value="1999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.1</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 1024 88 64 48  0 0 0 0 0 0     
+                    0 128 0 0 0 0 0 0 0 0 0       
+                    0 128 0 0 0 0 0 0 0 0 0  
+					0 0 0 0 0 0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">1</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">9</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">1.0</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">1.0</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.000</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.000</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.003</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.003</face_hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">500</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">500</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">3</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">1200</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.0</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.5</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">150</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">200</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">0.5</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">2.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">1.0</dark_area_nr_level>
+			<internal_shrink_ratio>1.0</internal_shrink_ratio>
+		</iso>	
+
+
+		<iso value="2999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.2</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 1024 88 64 48  0 0 0 0 0 0     
+                    0 128 0 0 0 0 0 0 0 0 0       
+                    0 128 0 0 0 0 0 0 0 0 0  
+					0 0 0 0 0 0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">1</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">9</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">1.0</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">1.0</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.000</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.000</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.003</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.003</face_hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">0</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">500</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">0</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">1200</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.2</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.5</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">150</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">200</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">0.5</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">6.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">1.0</dark_area_nr_level>
+			<internal_shrink_ratio>1.0</internal_shrink_ratio>
+		</iso>	
+
+		<iso value="3999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.35</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 128  64 40  32  0 0 0 0 0 0     
+                    0 16   0  0   0    0 0 0 0 0 0       
+                    0 16   0  0   0    0 0 0 0 0 0  
+					0  0   0  0   0     0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">7</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">21</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">0.9</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">0.65</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">1000</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">800</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">0</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">800</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.1</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.2</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">130</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">180</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">0</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">2.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">4.0</dark_area_nr_level>
+			<internal_shrink_ratio>1</internal_shrink_ratio>
+
+		</iso>	
+
+		<iso value="4999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.1</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 1024 88 64 48  0 0 0 0 0 0     
+                    0 16 0 0 0 0 0 0 0 0 0       
+                    0 16 0 0 0 0 0 0 0 0 0  
+					0 0 0 0 0 0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">1</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">9</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">1.0</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">1.0</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.000</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.000</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.003</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.003</face_hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">300</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">800</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">30</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">1200</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.2</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.5</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">130</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">180</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">1.0</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">4.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">1.0</dark_area_nr_level>
+			<internal_shrink_ratio>1.0</internal_shrink_ratio>
+		</iso>	
+
+		<iso value="6999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.5</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 1024 88 64 48  0 0 0 0 0 0     
+                    0 16 0 0 0 0 0 0 0 0 0       
+                    0 16 0 0 0 0 0 0 0 0 0  
+					0 0 0 0 0 0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">1</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">9</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">1.0</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">0.8</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.000</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.000</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.003</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.003</face_hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">300</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">800</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">30</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">1200</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.2</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.5</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">130</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">180</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">1.0</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">6.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">1.0</dark_area_nr_level>
+			<internal_shrink_ratio>1.0</internal_shrink_ratio>
+		</iso>	
+
+		<iso value="8999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.7</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 256  180 128  64  0 0 0 0 0 0     
+                    0 16   0  0   0    0 0 0 0 0 0       
+                    0 16   0  0   0    0 0 0 0 0 0  
+					0  0   0  0   0     0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">7</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">1</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">21</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">0.9</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">0.65</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">300</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">800</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">0</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">1200</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.1</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.2</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">130</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">180</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">0</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">2.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">4.0</dark_area_nr_level>
+		</iso>
+
+		<iso value="11999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.9</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 380  256 200  128  0 0 0 0 0 0     
+                    0 16   0  0   0    0 0 0 0 0 0       
+                    0 16   0  0   0    0 0 0 0 0 0  
+					0  0   0  0   0     0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">7</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.3</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">21</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">0.9</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">0.65</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">300</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">800</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">0</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">1000</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.1</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.2</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">130</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">180</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">0</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">2.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">4.0</dark_area_nr_level>
+		</iso>
+
+		<iso value="16999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.9</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 380  256 200  128  0 0 0 0 0 0     
+                    0 16   0  0   0    0 0 0 0 0 0       
+                    0 16   0  0   0    0 0 0 0 0 0  
+					0  0   0  0   0     0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">7</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.3</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">21</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">0.9</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">0.65</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">300</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">800</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">0</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">1200</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.1</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.2</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">130</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">180</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">0</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">2.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">4.0</dark_area_nr_level>
+		</iso>
+
+		<iso value="999999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0.9</y_nr_level>
+			<y_nr_tables       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="44">
+                    0 380  256 200  128  0 0 0 0 0 0     
+                    0 16   0  0   0    0 0 0 0 0 0       
+                    0 16   0  0   0    0 0 0 0 0 0  
+					0  0   0  0   0     0 0 0 0 0 0           
+            </y_nr_tables>
+			
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">7</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>			
+            <low_freq_nr_level_1   		type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_1>
+			<low_freq_nr_level_0        type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.3</low_freq_nr_level_0> 
+			<low_freq_nr_sigma          type="int"     rang="[0.0,40.0]"  default="0"     length="1">21</low_freq_nr_sigma> 
+            
+            <block_cnr           		type="int"     rang="[0,-]"       default="0"     length="1">1</block_cnr> 
+            <block_cnr_weights   		type="double"  rang="[0.0,-]"     default="1,0"   length="3">1.0 1.0 1.0</block_cnr_weights>
+			<block_cnr_compensation     type="double"  rang="[0,-]"       default="1"     length="1">0.9</block_cnr_compensation>
+			<block_cnr_scale            type="int"     rang="[0,-]"       default="10"    length="1">4</block_cnr_scale>
+			<block_cnr_blur_size        type="int"     rang="[0,-]"       default="3"     length="1">51</block_cnr_blur_size>
+
+            <mfnr_obc                   type="double"  rang="[0.0,10.0]"  default="1.2"   length="1">0.65</mfnr_obc>
+			<mfnr_obc_4face             type="double"  rang="[0.0,10.0]"  default="2.0"   length="1">2.0</mfnr_obc_4face>
+			<mfnr_motion_thres          type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</mfnr_motion_thres>			
+            <hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">2.0</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.15</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.02</hdr_irr_obc_thres>
+            <contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</contrast>	
+            <lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</hb_contrast>
+            <lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">300</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">800</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">0</high_freq_lce>
+
+			<do_unsharp_nr_level 		type="double"  rang="[0.0,100.0]" default="0"     length="1">0</do_unsharp_nr_level>
+            <do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">1200</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.1</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.2</unsharp_sigma_narrow>
+			<sharpness_thres       	    type="double" rang="[0, 10.0]"    default="0.003" length="1">0.003</sharpness_thres>
+			<sharpness_blur_sigma       type="double" rang="[0, 10.0]"    default="1.0"   length="1">1.0</sharpness_blur_sigma>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">130</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">180</hb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="10"    length="1">140</face_lb_exposure>
+            <face_hb_exposure      		type="double" rang="[0.0,255.0]"  default="130"   length="1">190</face_hb_exposure>
+			<enable_post_nr_process_in_prior   type="int" rang="[0,1]"    default="0"     length="1">1</enable_post_nr_process_in_prior>
+
+			<post_ynr_low_eps           type="double" rang="[0.0,32.0]"   default="0.0"   length="1">0</post_ynr_low_eps>
+            <post_ynr_high_eps          type="double" rang="[0.0,32.0]"   default="0.0"   length="1">2.0</post_ynr_high_eps>
+            <dark_area_nr_level         type="double" rang="[1.0,10.0]"   default="1.0"   length="1">4.0</dark_area_nr_level>
+		</iso>
+    </params>
+</image_refiner>

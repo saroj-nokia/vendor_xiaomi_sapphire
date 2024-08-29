@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Morpho MFNR Parameters Configuration -->
+<!-- Copyright(c) 2022 Morpho China,Inc.  -->
+<image_mfnr>
+    <version   type="string" length="1">v1.0.1_mfnr_generic_1208</version>
+    <camera_id type="int"    length="1">3</camera_id>
+
+    <params>
+            <iso value="1249">
+                <image_mfnr_array>
+                    <mfnr id="0">
+                        <deghost_level                 type="float"   rang="[0.0,2.0]"    default="1"     length="1">0</deghost_level>
+                        <ghost_nr_level                type="float"   rang="[0.0,5.0]"    default="1.5"   length="1">1.5</ghost_nr_level>
+                        <unsharp_level                 type="float"   rang="[0.0,1.0]"    default="0.0"   length="1">0.0</unsharp_level>
+                        <unsharp_range_low             type="float"   rang="[0.0,10.0]"   default="0.4"   length="1">0.4</unsharp_range_low>
+                        <unsharp_range_high            type="float"   rang="[0.0,10.0]"   default="1.0"   length="1">1.0</unsharp_range_high>
+                        <structure_level               type="float"   rang="[0.0,1.0]"    default="0.0"   length="1">0.0</structure_level>
+                        <structure_sigma               type="float"   rang="[0.0,5.0]"    default="0.8"   length="1">0.8</structure_sigma>
+                        <y_nr_level                    type="float"   rang="[1.0,10.0]"   default="0.0"   length="1">0.0</y_nr_level>
+                        <y_nr_radius                   type="int"     rang="[1,20]"       default="3"     length="1">3</y_nr_radius>
+                        <c_nr_level                    type="float"   rang="[0.0,10.0]"   default="0.0"   length="1">0.0</c_nr_level>
+                        <c_nr_radius                   type="int"     rang="[1,20]"       default="3"     length="1">3</c_nr_radius>
+                        <c_nr_times                    type="int"     rang="[0,3]"        default="0"     length="1">0</c_nr_times>
+                        <c_nr_color_boost              type="float"   rang="[1.0,1.2]"    default="1.0"   length="1">1.0</c_nr_color_boost>
+                        <low_freq_level                type="float"   rang="[0,-]"        default="0.0"   length="1">0.0</low_freq_level>
+                        <high_freq_level               type="float"   rang="[0,-]"        default="0.0"   length="1">0.0</high_freq_level>
+                        <y_gain_adder                  type="float"   rang="[0,32.0]"     default="0.0"   length="1">0.0</y_gain_adder>
+                        <c_gain_adder                  type="float"   rang="[0,32.0]"     default="0.0"   length="1">0.0</c_gain_adder>
+                        <dark_nr_level                 type="float"   rang="[1.0,16.0]"   default="1.0"   length="1">1.0</dark_nr_level>                         
+                        <deghost_level_face            type="float"   rang="[0,2.0]"      default="1.0"   length="1">1.0</deghost_level_face>
+                        <face_nr_level                 type="int"     rang="[1,10]"       default="8"     length="1">8</face_nr_level>
+                        <white_black_level             type="float"   rang="[0.0,1.0]"    default="1.0"   length="1">0.4</white_black_level>
+                    </mfnr>
+                </image_mfnr_array>
+            </iso>
+            <iso value="1251">
+                <image_mfnr_array>
+                    <mfnr id="0">
+                        <deghost_level                 type="float"   rang="[0.0,2.0]"    default="1"     length="1">1</deghost_level>
+                        <ghost_nr_level                type="float"   rang="[0.0,5.0]"    default="1.5"   length="1">0</ghost_nr_level>
+                        <unsharp_level                 type="float"   rang="[0.0,1.0]"    default="0.0"   length="1">0.0</unsharp_level>
+                        <unsharp_range_low             type="float"   rang="[0.0,10.0]"   default="0.4"   length="1">0.4</unsharp_range_low>
+                        <unsharp_range_high            type="float"   rang="[0.0,10.0]"   default="1.0"   length="1">1.0</unsharp_range_high>
+                        <structure_level               type="float"   rang="[0.0,1.0]"    default="0.0"   length="1">10</structure_level>
+                        <structure_sigma               type="float"   rang="[0.0,5.0]"    default="0.8"   length="1">0.8</structure_sigma>
+                        <y_nr_level                    type="float"   rang="[1.0,10.0]"   default="0.0"   length="1">1.0</y_nr_level>
+                        <y_nr_radius                   type="int"     rang="[1,20]"       default="3"     length="1">3</y_nr_radius>
+                        <c_nr_level                    type="float"   rang="[0.0,10.0]"   default="0.0"   length="1">10.0</c_nr_level>
+                        <c_nr_radius                   type="int"     rang="[1,20]"       default="3"     length="1">3</c_nr_radius>
+                        <c_nr_times                    type="int"     rang="[0,3]"        default="0"     length="1">0</c_nr_times>
+                        <c_nr_color_boost              type="float"   rang="[1.0,1.2]"    default="1.0"   length="1">1.0</c_nr_color_boost>
+                        <low_freq_level                type="float"   rang="[0,-]"        default="0.0"   length="1">0.0</low_freq_level>
+                        <high_freq_level               type="float"   rang="[0,-]"        default="0.0"   length="1">0.0</high_freq_level>
+                        <y_gain_adder                  type="float"   rang="[0,32.0]"     default="0.0"   length="1">0.0</y_gain_adder>
+                        <c_gain_adder                  type="float"   rang="[0,32.0]"     default="0.0"   length="1">0.0</c_gain_adder>
+                        <dark_nr_level                 type="float"   rang="[1.0,16.0]"   default="1.0"   length="1">1.0</dark_nr_level>                         
+                        <deghost_level_face            type="float"   rang="[0,2.0]"      default="1.0"   length="1">1.0</deghost_level_face>
+                        <face_nr_level                 type="int"     rang="[1,10]"       default="8"     length="1">8</face_nr_level>
+                        <white_black_level             type="float"   rang="[0.0,1.0]"    default="1.0"   length="1">0.4</white_black_level>
+                    </mfnr>
+                </image_mfnr_array>
+            </iso>
+            <iso value="99999">
+                <image_mfnr_array>
+                    <mfnr id="0">
+                        <deghost_level                 type="float"   rang="[0.0,2.0]"    default="1"     length="1">1</deghost_level>
+                        <ghost_nr_level                type="float"   rang="[0.0,5.0]"    default="1.5"   length="1">1.5</ghost_nr_level>
+                        <unsharp_level                 type="float"   rang="[0.0,1.0]"    default="0.0"   length="1">0.0</unsharp_level>
+                        <unsharp_range_low             type="float"   rang="[0.0,10.0]"   default="0.4"   length="1">0.4</unsharp_range_low>
+                        <unsharp_range_high            type="float"   rang="[0.0,10.0]"   default="1.0"   length="1">1.0</unsharp_range_high>
+                        <structure_level               type="float"   rang="[0.0,1.0]"    default="0.0"   length="1">0.0</structure_level>
+                        <structure_sigma               type="float"   rang="[0.0,5.0]"    default="0.8"   length="1">0.8</structure_sigma>
+                        <y_nr_level                    type="float"   rang="[1.0,10.0]"   default="0.0"   length="1">0.0</y_nr_level>
+                        <y_nr_radius                   type="int"     rang="[1,20]"       default="3"     length="1">3</y_nr_radius>
+                        <c_nr_level                    type="float"   rang="[0.0,10.0]"   default="0.0"   length="1">0.0</c_nr_level>
+                        <c_nr_radius                   type="int"     rang="[1,20]"       default="3"     length="1">3</c_nr_radius>
+                        <c_nr_times                    type="int"     rang="[0,3]"        default="0"     length="1">0</c_nr_times>
+                        <c_nr_color_boost              type="float"   rang="[1.0,1.2]"    default="1.0"   length="1">1.0</c_nr_color_boost>
+                        <low_freq_level                type="float"   rang="[0,-]"        default="0.0"   length="1">0.0</low_freq_level>
+                        <high_freq_level               type="float"   rang="[0,-]"        default="0.0"   length="1">0.0</high_freq_level>
+                        <y_gain_adder                  type="float"   rang="[0,32.0]"     default="0.0"   length="1">0.0</y_gain_adder>
+                        <c_gain_adder                  type="float"   rang="[0,32.0]"     default="0.0"   length="1">0.0</c_gain_adder>
+                        <dark_nr_level                 type="float"   rang="[1.0,16.0]"   default="1.0"   length="1">1.0</dark_nr_level>                         
+                        <deghost_level_face            type="float"   rang="[0,2.0]"      default="1.0"   length="1">1.0</deghost_level_face>
+                        <face_nr_level                 type="int"     rang="[1,10]"       default="8"     length="1">8</face_nr_level>
+                        <white_black_level             type="float"   rang="[0.0,1.0]"    default="1.0"   length="1">0.4</white_black_level>
+                    </mfnr>
+                </image_mfnr_array>
+            </iso>
+     </params>
+</image_mfnr>
+

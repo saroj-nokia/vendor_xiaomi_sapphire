@@ -1,0 +1,14 @@
+{
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"5_DLRetouch/mode_front.json",
+			"Index":5
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_front.json",
+			"Index":20
+		}
+	]
+}
