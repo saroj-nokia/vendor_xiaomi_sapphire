@@ -1866,27 +1866,27 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
-    android.hardware.gnss-aidl-service-qti.xml \
-    android.hardware.radio.config.xml \
-    android.hardware.security.keymint-service-qti.xml \
-    android.hardware.usb@1.2-service.xml \
-    c2_manifest_vendor.xml \
-    c2_manifest_vendor_audio.xml \
-    deviceinfo-saidl.xml \
-    manifest_android.hardware.drm-service.widevine.xml \
-    manifest_non_qmaa.xml \
-    manifest_non_qmaa_extn.xml \
-    manifest_vendor.xiaomi.hardware.mlipay.xml \
-    qms-saidl.xml \
-    vendor.dolby.hardware.dms.xml \
-    vendor.qti.diag.hal.service.xml \
-    vendor.qti.gnss-service.xml \
-    vendor.qti.hardware.lights.service.xml \
-    vendor.qti.hardware.limits-service.xml \
-    vendor.qti.hardware.perf.xml \
-    vendor.qti.hardware.radio.qtiradioconfig.xml \
-    vendor.qti.hardware.servicetracker@1.2-service.xml \
-    vendor.qti.memory.pasrmanager@1.0-service.xml
+    android.hardware.gnss-aidl-service-qti \
+    android.hardware.radio.config \
+    android.hardware.security.keymint-service-qti \
+    android.hardware.usb@1.2-service \
+    c2_manifest_vendor \
+    c2_manifest_vendor_audio \
+    deviceinfo-saidl \
+    manifest_android.hardware.drm-service.widevine \
+    manifest_non_qmaa \
+    manifest_non_qmaa_extn \
+    manifest_vendor.xiaomi.hardware.mlipay \
+    qms-saidl \
+    vendor.dolby.hardware.dms \
+    vendor.qti.diag.hal.service \
+    vendor.qti.gnss-service \
+    vendor.qti.hardware.lights.service \
+    vendor.qti.hardware.limits-service \
+    vendor.qti.hardware.perf \
+    vendor.qti.hardware.radio.qtiradioconfig \
+    vendor.qti.hardware.servicetracker@1.2-service \
+    vendor.qti.memory.pasrmanager@1.0-service
 
 PRODUCT_PACKAGES += \
     libimscamera_jni_libimscamera_jni_symlink64 \
