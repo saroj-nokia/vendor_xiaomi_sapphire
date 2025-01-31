@@ -14988,15 +14988,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.usb@1.2-service.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "c2_manifest_vendor.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
@@ -15697,15 +15688,6 @@ cc_prebuilt_binary {
 	soc_specific: true,
 }
 
-cc_prebuilt_binary {
-	name: "android.hardware.usb@1.2-service-qti",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-qti"],
-			shared_libs: ["libbase", "libhidlbase", "liblog", "libutils", "libhardware", "libcutils", "android.hardware.usb@1.0", "android.hardware.usb@1.1", "android.hardware.usb@1.2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
 	compile_multilib: "64",
 	strip: {
 		none: true,
@@ -16186,14 +16168,6 @@ sh_binary {
 	owner: "xiaomi",
 	src: "proprietary/vendor/bin/init.qcom.sensors.sh",
 	filename: "init.qcom.sensors.sh",
-	soc_specific: true,
-}
-
-sh_binary {
-	name: "init.qcom.usb",
-	owner: "xiaomi",
-	src: "proprietary/vendor/bin/init.qcom.usb.sh",
-	filename: "init.qcom.usb.sh",
 	soc_specific: true,
 }
 
