@@ -15688,6 +15688,15 @@ cc_prebuilt_binary {
 	soc_specific: true,
 }
 
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
 cc_prebuilt_binary {
 	name: "qcrilNrd",
 	owner: "xiaomi",
