@@ -8,23 +8,16 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sapphire/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/sapphire/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/sapphire/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
     vendor/xiaomi/sapphire/proprietary/odm/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration.xml \
     vendor/xiaomi/sapphire/proprietary/odm/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_default_stream_volumes.xml \
     vendor/xiaomi/sapphire/proprietary/odm/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_product_strategies.xml \
     vendor/xiaomi/sapphire/proprietary/odm/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/sapphire/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
-    vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/firmware/Conf_MultipleTest_ft3519t.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest_ft3519t.ini \
     vendor/xiaomi/sapphire/proprietary/vendor/firmware/focaltech_ts_fw_samsung_ft3519t.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_samsung_ft3519t.bin \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/hw/fingerprint.fpc_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc_fod.default.so \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.default.so \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
-    vendor/xiaomi/sapphire/proprietary/vendor/lib64/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay.so \
-    vendor/xiaomi/sapphire/proprietary/vendor/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay@1.1.so \
-    vendor/xiaomi/sapphire/proprietary/vendor/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni.so \
-    vendor/xiaomi/sapphire/proprietary/vendor/lib64/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvkeybox.so \
-    vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
     vendor/xiaomi/sapphire/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/sapphire/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/sapphire/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
@@ -1872,7 +1865,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm-service.widevine \
     manifest_non_qmaa \
     manifest_non_qmaa_extn \
-    manifest_vendor.xiaomi.hardware.mlipay \
     qms-saidl \
     vendor.dolby.hardware.dms \
     vendor.qti.diag.hal.service \
