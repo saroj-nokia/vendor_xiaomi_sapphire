@@ -134,6 +134,7 @@ vendor/xiaomi/sapphire/proprietary/system_ext/lib/vendor.qti.qccsyshal_aidl-V1-n
     vendor/xiaomi/sapphire/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
     vendor/xiaomi/sapphire/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
     vendor/xiaomi/sapphire/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
+    vendor/xiaomi/sapphire/proprietary/vendor/bin/hw/vendor.qti.hardware.limits@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.limits@1.2-service \
     vendor/xiaomi/sapphire/proprietary/vendor/bin/hw/vendor.qti.hardware.perf-hal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf-hal-service \
     vendor/xiaomi/sapphire/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/xiaomi/sapphire/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
@@ -624,6 +625,7 @@ vendor/xiaomi/sapphire/proprietary/system_ext/lib/vendor.qti.qccsyshal_aidl-V1-n
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
+    vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
@@ -1716,6 +1718,9 @@ vendor/xiaomi/sapphire/proprietary/system_ext/lib/vendor.qti.qccsyshal_aidl-V1-n
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.0.so \
+    vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.1.so \
+    vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.2.so \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0.so \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
@@ -1870,6 +1875,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.diag.hal.service \
     vendor.qti.gnss-service \
     vendor.qti.hardware.lights.service \
+    vendor.qti.hardware.limits-service \
     vendor.qti.hardware.perf \
     vendor.qti.hardware.radio.qtiradioconfig \
     vendor.qti.hardware.servicetracker@1.2-service \
