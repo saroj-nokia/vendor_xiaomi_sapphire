@@ -11,7 +11,7 @@ on post-fs-data
 on boot
     start mi_thermald
 
-on charger
+on property:init.svc.vendor.charger=running
     start mi_thermald
 
 
