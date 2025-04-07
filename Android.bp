@@ -12,6 +12,8 @@ cc_prebuilt_library_shared {
 	owner: "xiaomi",
 	strip: {
 		none: true,
+	},
+	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libar-pal.so"],
 		},
