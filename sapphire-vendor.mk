@@ -13,11 +13,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sapphire/proprietary/odm/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_product_strategies.xml \
     vendor/xiaomi/sapphire/proprietary/odm/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/sapphire/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
-    vendor/xiaomi/sapphire/proprietary/vendor/firmware/Conf_MultipleTest_ft3519t.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest_ft3519t.ini \
-    vendor/xiaomi/sapphire/proprietary/vendor/firmware/focaltech_ts_fw_samsung_ft3519t.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_samsung_ft3519t.bin \
-    vendor/xiaomi/sapphire/proprietary/vendor/lib64/hw/fingerprint.fpc_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc_fod.default.so \
-    vendor/xiaomi/sapphire/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.default.so \
-    vendor/xiaomi/sapphire/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/xiaomi/sapphire/proprietary/odm/firmware/Conf_MultipleTest_ft3519t.ini:$(TARGET_COPY_OUT_ODM)/firmware/Conf_MultipleTest_ft3519t.ini \
+    vendor/xiaomi/sapphire/proprietary/odm/firmware/focaltech_ts_fw_samsung_ft3519t.bin:$(TARGET_COPY_OUT_ODM)/firmware/focaltech_ts_fw_samsung_ft3519t.bin \
+    vendor/xiaomi/sapphire/proprietary/odm/lib64/hw/fingerprint.fpc_fod.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.fpc_fod.default.so \
+    vendor/xiaomi/sapphire/proprietary/odm/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_fod.default.so \
+    vendor/xiaomi/sapphire/proprietary/odm/lib64/libgf_hal.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal.so \
     vendor/xiaomi/sapphire/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/sapphire/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/sapphire/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
