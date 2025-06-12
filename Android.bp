@@ -393,6 +393,7 @@ dex_import {
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
 	system_ext_specific: true,
+}
 
 dex_import {
 	name: "dpmapi",
