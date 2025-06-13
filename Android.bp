@@ -280,6 +280,7 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/QtiTelephony/QtiTelephony.apk",
 	certificate: "platform",
+        privileged: true,
 	system_ext_specific: true,
 }
 
