@@ -747,6 +747,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sapphire/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    libpiex \
     vendor.qti.diaghal-V1-ndk \
     vendor.xiaomi.hw.touchfeature-V1-ndk \
     android.hardware.media.c2@1.0 \
@@ -1098,6 +1099,7 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libmediautils_vendor \
     libmemperfd \
+    libmemunreachable \
     libmeters-ns \
     libmeters \
     libmialgo_ai_vision \
