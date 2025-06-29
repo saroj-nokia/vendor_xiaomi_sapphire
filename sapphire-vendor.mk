@@ -922,6 +922,8 @@ PRODUCT_PACKAGES += \
     libanc_single_rt_bokeh \
     libapengine \
     libappclassifier \
+    libar-gsl \
+    libar-pal \
     libarcsoft_beautyshot \
     libarcsoft_dualcam_refocus_image \
     libarcsoft_dualcam_refocus_video \
@@ -1057,6 +1059,7 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
+    liblx-osal \
     libmapdata_api \
     libmasc \
     libmcs \
@@ -1364,6 +1367,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
+    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
