@@ -1497,6 +1497,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.displayfeature@1.0 \
     vendor.xiaomi.hardware.fingerprintextension@1.0 \
     vendor.xiaomi.hardware.fx.tunnel@1.0 \
+    vendor.xiaomi.hw.touchfeature@1.0 \
     libSnpeHtpV68Skel \
     libSnpeHtpV69Skel \
     libadsp_jpege_skel \
