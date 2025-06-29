@@ -24152,15 +24152,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.ir-service.example.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.radio.config.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.config.xml",
@@ -25105,38 +25096,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "android.hardware.gnss-V2-ndk",
                 "android.hardware.gnss-aidl-impl-qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.ir-service.example",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.ir-service.example",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "android.hardware.ir-V1-ndk",
-                "libhardware",
                 "libc++",
                 "libc",
                 "libm",
