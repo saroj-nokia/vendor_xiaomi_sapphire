@@ -36,6 +36,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
             <instance>software</instance>
         </interface>
-      <fqname>@1.0::IComponentStore/default1</fqname> <!-- DOLBY ADD -->
    </hal>
 </manifest>
