@@ -1158,7 +1158,6 @@ PRODUCT_PACKAGES += \
     libpal_net_if \
     libpalclient \
     libpasrutils \
-    libpcap \
     libpdmapper \
     libpdnotifier \
     libperfconfig \
