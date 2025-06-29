@@ -749,7 +749,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex \
     vendor.qti.diaghal-V1-ndk \
-    vendor.xiaomi.hw.touchfeature-V1-ndk \
     android.hardware.media.c2@1.0 \
     btaudio_offload_if \
     com.qti.sensor.n7_aac_gc16b3c_front_iii \
@@ -1498,7 +1497,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.displayfeature@1.0 \
     vendor.xiaomi.hardware.fingerprintextension@1.0 \
     vendor.xiaomi.hardware.fx.tunnel@1.0 \
-    vendor.xiaomi.hw.touchfeature@1.0 \
     libSnpeHtpV68Skel \
     libSnpeHtpV69Skel \
     libadsp_jpege_skel \
@@ -1554,6 +1552,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk \
+    vendor.xiaomi.hw.touchfeature-V1-ndk \
     fingerprint.fpc_fod.default \
     fingerprint.goodix_fod.default \
     libgf_hal \
