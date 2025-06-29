@@ -1096,7 +1096,6 @@ PRODUCT_PACKAGES += \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
-    libmediautils_vendor \
     libmemperfd \
     libmeters-ns \
     libmeters \
