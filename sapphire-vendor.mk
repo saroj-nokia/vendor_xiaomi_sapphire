@@ -432,6 +432,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
+    vendor/xiaomi/sapphire/proprietary/vendor/etc/init/init.qti.display_boot.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
@@ -479,6 +480,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.qti.tftp_qmaa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp_qmaa.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/xiaomi/sapphire/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
@@ -859,6 +861,7 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
     consumerir.qcom \
+    displayfeature.default \
     gralloc.bengal \
     sound_trigger.primary.bengal \
     vendor.qti.esepowermanager@1.1-impl \
@@ -877,6 +880,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.soter@1.0-impl \
     vendor.qti.memory.pasrmanager@1.0-impl \
+    vendor.xiaomi.hardware.displayfeature@1.0-impl \
     vendor.xiaomi.hw.touchfeature@1.0-impl \
     vulkan.adreno \
     lib-imscommon \
@@ -1001,7 +1005,10 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdiagjni \
     libdisp-aba \
+    libdisplayconfig.qti \
     libdisplaydebug \
+    libdisplayfeature \
+    libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
@@ -1239,10 +1246,13 @@ PRODUCT_PACKAGES += \
     librilqmimiscservices \
     librpmb \
     libsamplefilterplugin \
+    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
+    libsdmcore \
     libsdmextension \
+    libsdmutils \
     libsdsprpc \
     libsecureui \
     libsecureui_svcsock \
@@ -1481,6 +1491,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
+    vendor.xiaomi.hardware.displayfeature@1.0 \
     vendor.xiaomi.hardware.fingerprintextension@1.0 \
     vendor.xiaomi.hardware.fx.tunnel@1.0 \
     vendor.xiaomi.hw.touchfeature@1.0 \
@@ -1637,6 +1648,7 @@ PRODUCT_PACKAGES += \
     consumerird \
     cplay \
     diag-router \
+    displayfeature \
     dpmQmiMgr \
     dspservice \
     edgnss-daemon \
@@ -1656,6 +1668,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.perf-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
@@ -1668,12 +1681,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.memory.pasrmanager@1.0-service \
     vendor.qti.psiclient@1.0-service \
+    vendor.xiaomi.hardware.displayfeature@1.0-service \
     vendor.xiaomi.hw.touchfeature@1.0-service \
     ims_rtp_daemon \
     imsdaemon \
     init.qcom.sensors \
     init.qcom.usb \
     init.qti.chg_policy \
+    init.qti.display_boot \
     init.qti.media \
     init.qti.qcv \
     irsc_util \
