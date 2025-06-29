@@ -747,7 +747,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
     vendor.xiaomi.hw.touchfeature-V1-ndk \
-    android.hardware.media.c2@1.0 \
     btaudio_offload_if \
     com.qti.sensor.n7_aac_gc16b3c_front_iii \
     com.qti.sensor.n7_aac_ov16a1q_front_i \
@@ -854,13 +853,11 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    audio.primary.bengal \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
     consumerir.qcom \
     gralloc.bengal \
-    sound_trigger.primary.bengal \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -911,25 +908,14 @@ PRODUCT_PACKAGES += \
     libSnpeHtpV68Stub \
     libSnpeHtpV69Stub \
     libTrueSight \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     libadaptlaunch \
-    libadm \
     libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libagmmixer \
     libaidenoiser \
     libalLDC \
     libalhLDC \
-    libalsautils \
     libanc_dc_base \
     libanc_hdr \
     libanc_hdr_adapter_AncSuperNightLite \
@@ -937,8 +923,6 @@ PRODUCT_PACKAGES += \
     libanc_single_rt_bokeh \
     libapengine \
     libappclassifier \
-    libar-acdb \
-    libar-gpr \
     libar-gsl \
     libar-pal \
     libarcsoft_beautyshot \
@@ -948,11 +932,9 @@ PRODUCT_PACKAGES += \
     libarcsoft_high_dynamic_range \
     libarcsoft_low_light_hdr \
     libarcsoft_supernight \
-    libats \
     libaudio_log_utils \
     libbase64 \
     libbatching \
-    libbatterylistener \
     libbitmlengine \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -1019,7 +1001,6 @@ PRODUCT_PACKAGES += \
     libesesbprovision \
     libfastcvdsp_stub \
     libfastcvopt \
-    libfmpal \
     libgdtap \
     libgeofencing \
     libgnss \
@@ -1032,7 +1013,6 @@ PRODUCT_PACKAGES += \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr_tm \
-    libhfp_pal \
     libhistogram \
     libhta \
     libidl \
@@ -1042,7 +1022,6 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     libjpege \
-    libkaraokepal \
     libkcl \
     libkernelmanager \
     libkeymasterdeviceutils \
@@ -1081,7 +1060,6 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
     liblx-osal \
     libmapdata_api \
     libmasc \
@@ -1146,7 +1124,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalclient \
     libpasrutils \
     libpdmapper \
     libpdnotifier \
@@ -1252,7 +1229,6 @@ PRODUCT_PACKAGES += \
     libsi \
     libsilkyscrolls \
     libskewknob \
-    libsndcardparser \
     libsnpe_dsp_domains_v2 \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
@@ -1354,8 +1330,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1 \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.AGMIPC@1.0 \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm@1.0 \
@@ -1395,7 +1369,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.pal@1.0-impl \
-    vendor.qti.hardware.pal@1.0 \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
@@ -1624,10 +1597,6 @@ PRODUCT_PACKAGES += \
     SoterProvisioningTool \
     adpl \
     adsprpcd \
-    agmcap \
-    agmcompressplay \
-    agmhostless \
-    agmplay \
     audioadsprpcd \
     battery_stats \
     batterysecret \
@@ -1635,7 +1604,6 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     consumerird \
-    cplay \
     diag-router \
     dpmQmiMgr \
     dspservice \
