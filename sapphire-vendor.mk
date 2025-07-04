@@ -1679,7 +1679,7 @@ PRODUCT_PACKAGES += \
     TrustZoneAccessService \
     TxPwrAdmin \
     uimgbaservice \
-    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     AtFwd2 \
     DeviceInfo \
