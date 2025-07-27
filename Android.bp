@@ -8121,6 +8121,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcheckpid",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcheckpid.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "liblogwrap_vendor",
+                "vendor.xiaomi.hardware.misys@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libchilog",
     owner: "xiaomi",
     strip: {
