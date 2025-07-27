@@ -109,7 +109,7 @@ INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.csg_info_avlbl", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.cs_srv_type", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.limit_rac_change", "0");
-INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.poweron_opt", "0");
+INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.poweron_ign", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property) VALUES("persist.vendor.radio.sglte_target");
 INSERT OR REPLACE INTO qcril_properties_table(property) VALUES("persist.vendor.radio.nitz_plmn_0");
 INSERT OR REPLACE INTO qcril_properties_table(property) VALUES("persist.vendor.radio.nitz_plmn_1");
@@ -187,7 +187,7 @@ DELETE FROM qcril_properties_table WHERE property="persist.vendor.radio.hlos_pro
 UPDATE qcril_properties_table SET def_val="" WHERE property="all_bc_msg";
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.custom_ecc";
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.cs_srv_type";
-UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.poweron_opt";
+UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.poweron_ign";
 
 
 
