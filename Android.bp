@@ -54,6 +54,43 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.media.c2@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.media.c2@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.omx@1.0",
+                "android.hardware.media@1.0",
+                "android.hidl.safe_union@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "xiaomi",
     strip: {
@@ -11236,6 +11273,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmediautils_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmediautils_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmemperfd",
     owner: "xiaomi",
     strip: {
@@ -11252,6 +11315,31 @@ cc_prebuilt_library_shared {
                 "liblearningmodule",
                 "libperfgluelayer",
                 "libperfconfig",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmemunreachable",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmemunreachable.so",
+            ],
+            shared_libs: [
+                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -12194,6 +12282,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnetfilter_conntrack",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnetfilter_conntrack.so",
+            ],
+            shared_libs: [
+                "libnfnetlink",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnetmgr",
     owner: "xiaomi",
     strip: {
@@ -12572,6 +12685,30 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libnetmgrxfrmutils.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnfnetlink",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnfnetlink.so",
             ],
             shared_libs: [
                 "libc++",
@@ -15902,6 +16039,42 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsdmcore",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdmcore.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libdisplaydebug",
+                "libsdmutils",
+                "libdrm",
+                "libdrmutils",
+                "libsdedrm",
+                "libutils",
+                "libhidltransport",
+                "libhidlbase",
+                "vendor.xiaomi.hardware.displayfeature@1.0",
+                "sns_client_example",
                 "libc++",
                 "libc",
                 "libm",

@@ -761,6 +761,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex \
     vendor.qti.diaghal-V1-ndk \
+    android.hardware.media.c2@1.0 \
     btaudio_offload_if \
     com.qti.sensor.n7_aac_gc16b3c_front_iii \
     com.qti.sensor.n7_aac_ov16a1q_front_i \
@@ -1106,7 +1107,9 @@ PRODUCT_PACKAGES += \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
+    libmediautils_vendor \
     libmemperfd \
+    libmemunreachable \
     libmeters-ns \
     libmeters \
     libmialgo_ai_vision \
@@ -1140,6 +1143,7 @@ PRODUCT_PACKAGES += \
     libmorpho_video_stabilizer \
     libmpbase \
     libnative-api \
+    libnetfilter_conntrack \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_datapath_proxy \
@@ -1152,6 +1156,7 @@ PRODUCT_PACKAGES += \
     libnetmgrmodemproxy \
     libnetmgrportutils \
     libnetmgrxfrmutils \
+    libnfnetlink \
     libnlnetmgr \
     liboemaids_vendor \
     liboemcrypto \
@@ -1258,6 +1263,7 @@ PRODUCT_PACKAGES += \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
+    libsdmcore \
     libsdmextension \
     libsdmutils \
     libsdsprpc \
