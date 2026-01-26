@@ -547,6 +547,15 @@ dex_import {
 }
 
 dex_import {
+    name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "vendor.qti.ims.callcapability-V1.0-java",
     owner: "xiaomi",
     jars: [

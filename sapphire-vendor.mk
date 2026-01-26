@@ -1715,6 +1715,7 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.hardware.sensorscalibrate-V1.0-java \
     vendor.qti.ims.callcapability-V1.0-java \
     vendor.qti.ims.callcapabilityaidlservice-V1-java \
     vendor.qti.ims.callinfo-V1.0-java \
