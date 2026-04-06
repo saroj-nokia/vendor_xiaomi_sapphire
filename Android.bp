@@ -3,15 +3,6 @@
 //
 
 soong_namespace {
-    imports: [
-        "device/xiaomi/sapphire",
-        "hardware/qcom-caf/sm6225",
-        "hardware/qcom-caf/wlan",
-        "hardware/xiaomi",
-        "vendor/qcom/opensource/commonsys-intf/display",
-        "vendor/qcom/opensource/dataservices",
-        "vendor/qcom/opensource/display",
-    ],
 }
 
 cc_prebuilt_library_shared {
