@@ -475,6 +475,15 @@ dex_import {
 }
 
 dex_import {
+    name: "camerax-vendor-extensions",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/camerax-vendor-extensions.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "com.android.hotwordenrollment.common.util",
     owner: "xiaomi",
     jars: [
@@ -803,15 +812,6 @@ dex_import {
     owner: "xiaomi",
     jars: [
         "proprietary/system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "camerax-vendor-extensions",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/camerax-vendor-extensions.jar",
     ],
     system_ext_specific: true,
 }
