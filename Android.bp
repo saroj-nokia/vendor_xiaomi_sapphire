@@ -439,6 +439,15 @@ dex_import {
 }
 
 dex_import {
+    name: "com.qti.snapdragon.sdk.display",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/product/framework/com.qti.snapdragon.sdk.display.jar",
+    ],
+    product_specific: true,
+}
+
+dex_import {
     name: "uimgbalibrary",
     owner: "xiaomi",
     jars: [
