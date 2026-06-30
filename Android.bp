@@ -3,6 +3,14 @@
 //
 
 soong_namespace {
+    imports: [
+        "device/xiaomi/sapphire",
+        "hardware/qcom-caf/wlan",
+        "hardware/xiaomi",
+        "vendor/qcom/opensource/commonsys-intf/display",
+        "vendor/qcom/opensource/dataservices",
+        "vendor/qcom/opensource/display",
+    ],
 }
 
 cc_prebuilt_library_shared {
@@ -439,6 +447,15 @@ dex_import {
 }
 
 dex_import {
+    name: "com.qti.snapdragon.sdk.display",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/product/framework/com.qti.snapdragon.sdk.display.jar",
+    ],
+    product_specific: true,
+}
+
+dex_import {
     name: "uimgbalibrary",
     owner: "xiaomi",
     jars: [
@@ -470,6 +487,15 @@ dex_import {
     owner: "xiaomi",
     jars: [
         "proprietary/system_ext/framework/audiosphere.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "camerax-vendor-extensions",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/camerax-vendor-extensions.jar",
     ],
     system_ext_specific: true,
 }
